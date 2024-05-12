@@ -1,0 +1,247 @@
+
+@media (min-width: 800px) {
+    .header-text {
+        font-size: 7rem;
+    }
+
+    .header-description {
+        font-size: 1.5rem;
+    }
+
+
+    .menu ul li a {
+        font-size: 90%;
+    }
+
+    .menu {
+        position: absolute;
+        opacity: 0;
+        top: 110px;
+        margin-left: -48px;
+        z-index: 1;
+    }
+
+    .help-btn:hover .menu {
+        display: flex;
+        opacity: 1;
+    }
+
+    .help-btn:hover .nav-item {
+        color: var(--btn-blue);
+    }
+
+    .sub-menu .active .sub-menu-nav {
+        display: flex;
+        opacity: 1;
+    }
+
+    .sub-menu .active ul {
+        padding-top: 5px;
+        border: none;
+    }
+
+    .sub-menu .active > a {
+        position: relative;
+        z-index: 1;
+        border-bottom: 3px solid var(--btn-blue);
+    }
+
+    .sub-menu .active div ul li a:hover {
+        color: var(--btn-blue);
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-text {
+        font-size: 5rem;
+    }
+
+    .header-description {
+        font-size: 1.5rem;
+    }
+
+    .main-canvas {
+        flex-direction: column;
+    }
+
+    .arrow {
+        opacity: 1;
+        animation: fadeIn 3s, bounce 2.5s infinite;
+    }
+}
+
+@media (max-width: 800px) {
+    #subject {
+        width: 150px;
+    }
+
+    .toggle-btn {
+        display: flex;
+        margin-right: 35px;
+    }
+
+    .navbar ul {
+        padding: 4vh 0 4vh 35px;
+    }
+
+    .upper-canvas {
+        flex-direction: column;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+
+    .nav-items {
+        display: none;
+        background-color: var(--nav-item);
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 0px;
+        
+        padding: 5px 0 5px 0;
+    }
+
+    .nav-items ul {
+        width: 100%;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .menu ul {
+        background-color: var(--menu-background);
+    }
+
+    .sub-menu-nav > ul {
+        background-color: var(--shadow);
+    }
+
+    .nav-items.active {
+        display: flex;
+        padding: 5px 0 5px 0;
+    }
+
+    .nav-items li {
+        font-size: 1rem;
+        padding: 1vh 0vh;
+        text-align: center;
+    }
+
+    .nav-items li:nth-last-child(1) {
+        padding-right: 0vh;
+    }
+
+    .nav-items.active {
+        position: static;
+        display: flex;
+    }
+
+    .help-btn  {
+        width: 100%;
+        padding: 0;
+    }
+
+    .help-btn:hover .projects ul {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.8vh;
+    }
+
+    .menu li {
+        width: 100%;
+        padding: 7px 0;
+    }
+    
+    .menu li a {
+        padding: 10px 10px;
+        font-size: 0.9rem;
+    }
+
+    .nav-items li a {
+        color: var(--primary);
+    }
+
+    .nav-items li a:hover {
+        color: var(--btn-blue);
+    }
+    
+    .menu.active {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .sub-menu .active .sub-menu-nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sub-menu .active ul {
+        border: none;
+    }
+
+    .sub-menu .active div ul li a:hover {
+        color: var(--primary);
+    }
+
+    .header {
+        margin-bottom: 5rem;
+    }
+
+    .header-text {
+        font-size: 4.5rem;
+    }
+
+    .header-description {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        padding: 3vh 0;
+    }
+
+    .header-text {
+        font-size: 3.5rem;
+    }
+
+    .header-description {
+        font-size: 1rem;
+    }
+
+    .text-container {
+        padding: 5vh 7vh;
+    }
+
+    .sub-header {
+        font-size: small;
+    }
+
+    .footer {
+        padding-top: 5vh;
+    }
+
+    .footer p {
+        font-size: smaller;
+    }
+}
+
+@media (max-height: 600px) {
+    .form {
+        padding-top: 6rem;
+    }
+}

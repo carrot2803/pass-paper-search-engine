@@ -1,0 +1,89 @@
+@import url('./select.css');
+
+.switch {
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.stxt {
+    color: rgb(200, 200, 200);
+}
+
+.switch label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {  /* Hide default HTML checkbox */
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.loader {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(150, 150, 150);
+    box-shadow: 0 0 10px var(--white);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.loader::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--white);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .loader {
+    background-color: var(--btn-blue);
+    box-shadow: 0 0 10px var(--btn-blue);
+}
+
+input:checked + .loader::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.loader.circle {
+    border-radius: 34px;
+}
+
+.loader.circle::before {
+    border-radius: 50%;
+}
+
+.stxt.active {
+    color: var(--shadow);
+}
+
+.inputs,
+.switches {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.switches {
+    flex-direction: column;
+    margin-bottom: 4rem;
+}

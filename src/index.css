@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+@import url('./css/main.css');
+@import url('./css/var.css');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: var(--btn-blue);
+}
+

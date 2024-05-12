@@ -1,0 +1,88 @@
+.upper-canvas {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    font-size: 110%;
+    animation: fadeIn 3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.navbar ul {
+    padding: 45px 0px 45px 60px;
+}
+
+.nav-items {
+    position: relative;
+    display: flex;
+}
+
+.nav-items li {
+    padding: 45px 20px;
+}
+
+.nav-items li a {
+    transition: ease-in-out color 0.3s;
+}
+
+.nav-items li a:hover {
+    color: var(--btn-blue);
+}
+
+.nav-items li:last-child {
+    padding-right: 60px;
+}
+
+
+/* check back */
+.menu {
+    display: none;
+    margin-top: -1.5rem;
+    margin-right: 10rem;
+    background-color: var(--primary);
+    border: 1.5px solid var(--shadow);
+    border-radius: 10px; /* Adjust the value as per your preference */
+} 
+
+.menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 5px 10px;
+}
+
+
+.logo {
+    display: flex;
+    font-size: larger;
+}
+
+.logo-circle {
+    color: var(--btn-blue);
+}
+
+.toggle-btn {
+    position: relative;
+    margin-left: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 20px;
+}
+
+.toggle-btn .bar {
+    height: 2px;
+    width: 100%;
+    background-color: var(--shadow);
+    border-radius: 10px;
+}

@@ -1,0 +1,159 @@
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+}
+
+:root {
+    --secondary: linear-gradient(-45deg,  #4481eb 0%, #04befe 100%);
+    --body: #eaf2ff;
+    --card: #fff;
+    --text: #000;
+    --price: #4481eb;
+}
+
+body {
+    background: var(--body);
+    transition: background 0.3s;
+    gap: 20px;
+}
+
+body.dark {
+    --body: #171717;
+    --text: #fff;
+    --card: #0d0d0d;
+}
+
+body.solar{
+    --card: linear-gradient(-45deg, #FFB900 0%, #FF6F61 50%, #0a0f23 100%);
+    --text: #fff;
+    --body:  #3f89d4;
+}
+
+body.dark-solar{
+    --card: linear-gradient(-30deg, #876813 0%, #7b1f16 50%, #0a0f23 100%);
+    --text: #fff;
+    --body:  #164472;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: var(--secondary);
+    transition: background 0.3s;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+}
+
+.card {
+    height: 240px;
+    width: 180px;
+    background: var(--card);
+    border-radius: 20px;
+    padding: 10px;
+    font-family: sans-serif;
+    display: flex;
+    color: var(--text);
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.09);
+}
+
+.card img {
+    width: 160px;
+    height: 120px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.card__title {
+    color: var(--text);
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.card__description {
+    margin-top: 5px;
+    display: block;
+    font-size: 15px;
+    opacity: 0.6;
+    transition: color 0.3s;
+}
+
+.card__shop {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__shop__price {
+    color: var(--price);
+}
+
+.card__shop__action {
+    height: 40px;
+    width: 40px;
+    outline: none;
+    border: none;
+    background: var(--secondary);
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.card__shop__action span {
+    color: #fff;
+    font-size: 26px;
+}
+
+i .material-icons:hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--text);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+i .material-icons:hover{
+    width: 24px;
+    height: 24px;
+}
+
+i .material-icons:hover{
+    cursor: pointer;
+}

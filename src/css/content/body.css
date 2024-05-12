@@ -1,0 +1,117 @@
+@import url('../components/btn.css');
+
+.arrow {
+    top: 75%;
+    position: absolute;
+    text-align: center;
+}
+
+.arrow.fade.appear {
+    opacity: 1;
+    animation: fadeIn 3s, bounce 2.5s infinite;
+}
+
+.move {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2.5s infinite;
+}
+
+.main-canvas {
+    display: flex;  
+    justify-content: space-evenly;
+    gap: 2rem;
+    background-color: var(--primary);
+    transition: ease-in-out 1s;
+}
+
+.background-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110vh;
+    height: 110vh;
+    z-index: 1;
+    background-image: var(--banner);
+    border-radius: 0% 50% 0% 50%; /* Adjusted border-radius values for a stylish curve */
+    transform: scaleX(1); /* Increase the horizontal scale to make the curve wider */
+    overflow: hidden; /* Hide any content that overflows the curved area */
+}
+
+.load {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form {
+    padding: 3rem;
+}
+
+body {
+    font-size: calc(var(--base-fs)*0.9);
+    background-color: transparent;
+}
+
+@media (min-width: 48em) {
+    body {
+        font-size: calc(var(--base-fs));
+    }
+}
+
+@media (min-width: 64em) {
+    body {
+        font-size: calc(var(--base-fs)*1);
+    }
+
+    .menu {
+        margin-left: -46px !important;
+    }
+}
+
+@media (min-width: 120em) {
+    body {
+        font-size: calc(var(--base-fs)*1.1);
+    }
+
+    .menu {
+        top: 116px !important;
+        margin-left: -47px !important;
+    }
+}
+
+@media (min-width: 160em) {
+    body {
+        font-size: calc(var(--base-fs)*1.2);
+    }
+
+    .menu {
+        top: 120px !important;
+        margin-left: -49px !important;
+    }
+}
+
+.footer-container {
+    position: relative;
+    margin-top: 10vh;
+    animation: fadeIn 3s;
+}
+
+.text-container {
+    padding: 5vh 15vh 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

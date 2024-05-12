@@ -1,0 +1,74 @@
+@import url("./components/switch.css");
+@import url("./components/cursor.css");
+@import url("./misc/animate.css");
+@import url("./misc/scale.css");
+
+* {
+	--base-fs: 1em; /* font size */
+}
+
+:root {
+	--dark-grey: rgb(50, 50, 60);
+	--black0: rgb(22, 20, 30);
+	--black1: rgb(13, 12, 18);
+	--carrot-blue: linear-gradient(-45deg, var(--social-icon) 0%, #04befe 100%);
+	--blue0: #5995fd;
+	--white: #fff;
+	--black: #000;
+}
+
+.light {
+	--menu-background: var(--dark-grey);
+	--nav-item: var(--black0);
+	--shadow: var(--black1);
+	--btn-blue: var(--blue0);
+	--primary: var(--white);
+	--secondary: var(--black);
+	--textcol: var(--black);
+	--banner: transparent;
+	--dp-hover: rgb(170, 170, 170);
+	--dp-item: rgb(240, 240, 240);
+}
+
+.dark {
+	--menu-background: var(--dark-grey);
+	--nav-item: var(--black0);
+	--shadow: var(--white);
+	--btn-blue: var(--blue0);
+	--textcol: var(--white);
+	/* --primary: #0e0d0d; */
+	--primary: #18191a;
+	--secondary: var(--white);
+	--banner: transparent;
+	/* --banner: linear-gradient(-45deg,  #38BDF8 0%, #FF6F61 50%, #0a0f23 100%); */
+	--dp-hover: rgb(170, 170, 170);
+	--dp-item: #18191a;
+}
+
+.solar {
+	--menu-background: var(--dark-grey);
+	--nav-item: var(--black0);
+	--shadow: var(--white);
+	--btn-blue: #ff6f61;
+	--textcol: var(--white);
+	--primary: #216ab4;
+	--secondary: var(--white);
+	--banner: linear-gradient(-45deg, #ffb900 0%, #ff6f61 50%, #0a0f23 100%);
+	--base-fs: 1em; /* font size */
+	--dp-hover: #ff6f61;
+	--dp-item: #216ab4;
+}
+
+.dark-solar {
+	--menu-background: var(--dark-grey);
+	--nav-item: var(--black0);
+	--shadow: var(--white);
+	--btn-blue: #ff6e61cc;
+	--textcol: var(--white);
+	--primary: #082745;
+	--secondary: var(--white);
+	--banner: linear-gradient(-45deg, #38bdf8 0%, #ff6f61 50%, #0a0f23 100%);
+	--base-fs: 1em; /* font size */
+	--dp-hover: #ff6e61cc;
+	--dp-item: #0e4378;
+}
