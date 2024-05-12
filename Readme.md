@@ -9,5 +9,6 @@ This is a small CSEC pass paper engine I created during my first year, using Exp
 
 ## Demo Usage
 ![Gif](https://imgur.com/e161fRp.gif)
-[Video](https://i.imgur.com/fd2XzWF.mp4)
+<br>
+[Higher quality video](https://i.imgur.com/fd2XzWF.mp4)
 
